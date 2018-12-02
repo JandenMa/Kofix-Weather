@@ -1,0 +1,52 @@
+.btnbar {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnbar .temptype-box {
+    border: solid 0.1rem #ccc;
+    border-radius: 2rem;
+}
+
+.btnbar .temptype-box button {
+    padding: 0.1rem;
+}
+
+.btnbar .temptype-box button:nth-child(1) {
+    padding-right: 1rem;
+}
+
+.btnbar .temptype-box button:nth-last-child(1) {
+    padding-left: 1rem;
+}
+
+.btnbar .temptype-box .temptype {
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 1.1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.btnbar .temptype-box .temptype.active {
+    background-color: #6c6c6c;
+}
+
+.btnbar .toolbtn{
+    padding: 0.25rem;
+    line-height: 0;
+    border-radius: 50%;
+    color:#6c6c6c;
+    box-shadow: 0 0 8px 2px #c6c6c6;
+}
+
+.btnbar .toolbtn:active{
+    box-shadow: 0 0 6px 1px #ccc;
+}
+
+.btnbar button:disabled .toolbtn{
+    color: #b6c6c6!important;
+    box-shadow: 0 0 5px 1px #ccc;
+}

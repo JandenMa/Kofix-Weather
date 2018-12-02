@@ -1,0 +1,26 @@
+.navbar-box {
+    padding: 0.8rem 0;
+    margin: 0 1rem;
+    border-bottom: solid 1px #e8e8e8;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    color: #4c4c4c;
+}
+
+.navbar-box .navbar-icon {
+    flex: 1;
+    font-size: 2rem;
+}
+
+.navbar-box .navbar-city {
+    text-align: center;
+    flex: 1;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
