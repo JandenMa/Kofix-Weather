@@ -18,7 +18,7 @@ export default class Footer extends Component {
     setData() {
         let data = store.getState();
         if (data && data.operateTime && (this.state.operateTime !== 0) && (data.operateTime !== this.state.operateTime)) {
-            let date = moment.utc(data.operateTime);
+            let date = moment.utc(data.operateTime).local();
             this.setState({
                 lastBuildDate: date.format('YYYY-MM-DD, HH:mm'),
                 operateTime: data.operateTime
