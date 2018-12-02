@@ -28,9 +28,7 @@ async function getCity(action, state) {
 
 
 async function getWeather(action, state) {
-    if (!state.city) {
-        await getCity(action, state);
-    }
+    await getCity(action, state);
     if (action.params && action.params.temptype) {
         state.tempType = action.params.temptype;
     }
